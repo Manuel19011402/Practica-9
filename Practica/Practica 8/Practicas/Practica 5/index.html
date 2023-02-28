@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+<style>
+body{
+    background:hsla(279, 53%, 74%, 0.897);
+    margin:0
+}
+.form{
+    width:440px;
+    height:700px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#5b339c;
+    border-bottom:3px solid #9c13a8
+}
+input{
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;font-size:14px;
+    color:#9210b9
+}
+button{
+    border-radius: 15%;
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    background:#e06bd7;
+    color:#fff
+}
+div{
+    content:'Hi';
+    position:sticky;
+    bottom:-15px;right:-20px;
+    background:#ff5151;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+span{
+    margin:0 5px 0 15px
+}
+
+select{
+    font-style: italic;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    border-style:inherit
+}
+
+label{
+    margin:28px 0 0;font-size:14px;
+    color:#5a5a5a
+}
+
+</style>
+  </head>
+  <body>
+    <form class="form" method="get">
+        <h2>Contactanos!!</h2>
+        <p type="Nombre:"><input style="width: 100%;" placeholder="Escribe tu nombre aquí.." maxlength="50"></input></p>
+        <p type="Apellidos:"><input style="width: 100%;" placeholder="Escribe tus apellidos aquí.." maxlength="50"></input></p>
+        <p type="Sexo:"><br>
+            <input type="radio" name="sexo" id="sexo-h" value="h">
+            <label for="sexo-h">Hombre</label>
+            <input type="radio" name="sexo" id="sexo-m" value="m">
+            <label for="sexo-h">Mujer</label>
+        </p>
+        <p type="Poblacion:">
+            <select>
+                <option>Elija una opcion...</option>
+                <option>Orizaba</option>
+                <option>C&oacute;rdoba</option>
+                <option>Xalapa</option>
+                <option>Veracruz</option>
+            </select>
+        </p>
+        <p type="E-mail:"><input style="width: 100%;" placeholder="Email para que te contactemos.."></input></p>
+        <p type="Mensaje:"><input style="width: 100%;" placeholder="Que deseas saber.."></input></p>
+        <p>
+            <input type="checkbox" name="info" id="info" checked="checked">
+            <label for="info">Deseo recibir informacion sobre novedades y ofertas</label><br>
+            <input type="checkbox" name="condiciones" id="condiciones">
+            <label for="condiciones">Declaro haber leido y aceptar las condiciones generales del programa y la normatica sobre proteccion de datos</label>
+        </p>
+        <button>Enviar</button>
+      </form>
+      <div>
+        <span ></span>001 1023 567
+        <span ></span> contact@gmail.com
+      </div>
+  </body>
+</html>

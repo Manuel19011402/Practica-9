@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica 4</title>
+</head>
+
+<style>
+
+    #tabla {
+
+        font-family: "Arial", Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+
+    #tabla td, #tabla th {
+
+        border: 1px solid #ddd;
+        padding: 8px;
+        font-size: 20px;
+
+    }
+
+    #tabla tr:nth-child(even){background-color: blueviolet;}
+
+    #tabla tr:hover {background-color:turquoise;}
+
+    #tabla th {
+
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: darkred;
+        color:#ddd;
+
+    }
+
+    #cap{
+        font-size: 40px;
+        font-style: italic;
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <div id="cap">
+    <caption> Linea del tiempo  </caption>
+    </div><br>
+
+    <table id="tabla">
+        <tr>
+            <th> Web</th> 
+            <th> A&ntilde;o</th> 
+            <th colspan="2"> Descripci&oacute;n </th> 
+        </tr>
+
+        <tr>
+
+            <td>Web 1.0</td> 
+            <td>1990</td> 
+            <td><p>Fue la primera y en ella solo se pod&iacute;a consumir contenido. Se trataba de informacion a la que se pod&iacute;a acceder, pero sin la posibilidad de interactuar: era unidireccional.</p></td>
+            <td><img src="img/web10.png" height="200px" width="400"></td>
+        </tr>
+        <tr>
+            <td>Web 2.0</td> 
+            <td>2000 - 2004</td> 
+            <td><p>Permite la interacci&oacute;n entre usuarios. Da control total al usuario de manejar su informaci&oacute;n. Usuarios productores como consumidores Web colaborativa. O'Really Media da por primera vez el termino Web 2.0 en octubre del 2004</p></td>
+            <td><img src="img/web20.png" height="200px" width="400"></td>
+        </tr>
+        
+        <tr>
+            <td>Web 3.0</td>
+            <td>2010</td>
+            <td><p>Suege la Web 3.0 tambi&eacute;n conocida como la WEB semantica, esta renovo el sentido de la Web proporcionando busquedas mas inteligentes con ayuda de palabras clave, inteligencia artificial y reconocimiento de voz.</p></td>
+            <td><img src="img/web30.png" height="200px" width="400"></td>
+        </tr>
+
+        <tr>
+            <td>Web 4.0</td>
+            <td>2016</td> 
+            <td><p>La Web 4.0 empez&oacute; en el 2016 y se centra en ofrecer un comportamiento m&aacute;s inteligente y m&aacute;s predictivo, de modo que podamos, con solo realizar una afirmaci&oacute;n o una llamada, poner en marcha un conjunto de acciones que tendran como resultado que pedimos, deseamos o decimos.</p></td>
+            <td><img src="img/web40.png" height="200px" width="400"></td>
+
+        </tr>
+        
+        
+        <tfoot align="center">
+            <tr>
+                <td colspan="4">Linea del tiempo sobre la evoluci&oacute;n de la Web</td>
+            </tr>
+        </tfoot>
+        
+    </table> 
+
+</body>
+</html>
